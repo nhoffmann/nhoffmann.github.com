@@ -1,0 +1,11 @@
+---
+layout: default
+title: Zentralmaschine
+---
+
+{% for post in site.posts %}
+
+    {{ post.date | date: "%B %e, %Y" }}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+
+{% endfor %}

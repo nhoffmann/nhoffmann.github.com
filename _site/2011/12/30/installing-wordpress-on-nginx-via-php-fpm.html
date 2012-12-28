@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset=utf-8 />
-  <title>  Installing Wordpress on NGINX via php-fpm |  zentralmaschine.net </title>
-  <link rel="stylesheet" href="/assets/css/bootstrap.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
- 
-  <header class="content">
-    <h1><a href="/">Zentralmaschine</a></h1>
-  </header>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>zentralmaschine</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="stylesheets/index.css">
 
-  <div id="main">
-    <nav role="navigation">
-    </nav>
- 
-    <div class="content">
+        <script src="scripts/modernizr.min.js"></script>
+
+        <link href="http://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+
+        <link href='http://fonts.googleapis.com/css?family=Cantata+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    <div class="container">
       <p>This is a short tutorial on how to install php-fpm on debian squeeze and how to configure nginx so it will serve a wordpress installation.</p>
 
-<p>Install php-fpm by adding a new apt source: <pre>
+<p>Install php-fpm by adding a new apt source:</p>
+
+<pre>
 sudo echo "deb http://packages.dotdeb.org stable all" &gt;&gt; /etc/apt/sources.list
 apt-get update
-</pre></p>
+</pre>
+
 
 <p>Apt will probably complain about a missing key for the just added repository. This can be fixed by adding the key to apts keyring. Please make sure that you get the right key and compare the fingerprints.</p>
+
 <pre>gpg --export &lt;PUBLIC_KEY&gt; | apt-key add -</pre>
+
+
 <p>Now install php-fpm</p>
+
 <pre>apt-get update
 apt-get install php5-fpm php5-suhosin php5-mysql</pre>
-<p>By default php-fpm listens on http://127.0.0.1:9000. Since we are on a unix system, we like to make use of sockets. Open fpm pool configuration and search for the <em>listen</em> directive. Then adapt it to your needs. <pre># /etc/php5/fpm/pool.d/www.conf
-listen = /tmp/php-fpm.sock</pre></p>
+
+
+<p>By default php-fpm listens on http://127.0.0.1:9000. Since we are on a unix system, we like to make use of sockets. Open fpm pool configuration and search for the <em>listen</em> directive. Then adapt it to your needs.</p>
+
+<pre># /etc/php5/fpm/pool.d/www.conf
+listen = /tmp/php-fpm.sock</pre>
+
 
 <p>Add an upstream server for php to nginx.conf so it is available for all configurations:</p>
+
 <pre>
 # /etc/nginx/nginx.conf
 # Upstream to abstract backend connection(s) for PHP.
@@ -41,15 +59,24 @@ upstream php {
     # or whatever you configured php-fpm to listen to
 }
 </pre>
-<p>Add these global configurations for nginx to <code>/etc/nginx/global</code> <script src='https://gist.github.com/1534643.js'> </script></p>
+
+
+<p>Add these global configurations for nginx to <code>/etc/nginx/global</code></p>
+
+<script src="https://gist.github.com/1534643.js"> </script>
+
 
 <p>Download wordpress and unpack</p>
+
 <pre>
 cd /var/www/mydomain
 wget http://wordpress.org/latest.tar.gz
 tar xzf latest.tar.gz
 </pre>
+
+
 <p>All that is needed now is the nginx configuration</p>
+
 <pre>
 server {
         listen       80;
@@ -66,16 +93,42 @@ server {
         include global/wordpress-ms-subdir.conf;
 }
 </pre>
+
+
+
+
     </div>
-    
-  </div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
 
-  <footer class="content">
-    <p>I am Niels Hoffmann, software developer by profession and co-founder of pipapo.co where we build things like <a href="https://blabber.io">Blabber</a> and <a href="http://fandangocast.com">Fandango</a>. I am based in Berlin, Germany. Sometimes I write down my findings and insights on this blog. The rest of the time I am busy creating stuff with computers, mostly on the web.</p>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')</script>
 
-    <p>You can contact me via Xing, LinkedIn or on Twitter.</p>
-  </footer>
- 
 
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    <!-- build:js scripts/plugins.js -->
+    <!-- <script src="scripts/vendor/bootstrap/bootstrap-affix.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-alert.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-dropdown.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-tooltip.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-modal.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-transition.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-button.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-popover.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-typeahead.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-carousel.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-scrollspy.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-collapse.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-tab.js"></script> -->
+    <!-- endbuild -->
 </body>
 </html>

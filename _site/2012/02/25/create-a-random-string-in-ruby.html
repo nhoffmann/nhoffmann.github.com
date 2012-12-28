@@ -1,54 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset=utf-8 />
-  <title>  Create a Random String in Ruby |  zentralmaschine.net </title>
-  <link rel="stylesheet" href="/assets/css/bootstrap.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
- 
-  <header class="content">
-    <h1><a href="/">Zentralmaschine</a></h1>
-  </header>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>zentralmaschine</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="stylesheets/index.css">
 
-  <div id="main">
-    <nav role="navigation">
-    </nav>
- 
-    <div class="content">
-      <article>
-  <section>
-    <h1>Create a Random String in Ruby</h1>
-    2012-02-25 03:37:42 +0100
-    <p>Not the hardest of tasks, but nevertheless a discussed one: Creating random strings in ruby. And that would be base62 encoded strings, so that they can be used in URLs.</p>
+        <script src="scripts/modernizr.min.js"></script>
 
-<p>So what to do? Using <a href='http://stackoverflow.com/a/88341/310497'>this solution</a>? Not random enough.</p>
+        <link href="http://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
 
-<p>What about the solutions described in <a href='http://blog.logeek.fr/2009/7/2/creating-small-unique-tokens-in-ruby'>this blog post</a>? Promising. And I like the ActiveSupport::SecureRandom method best.</p>
+        <link href='http://fonts.googleapis.com/css?family=Cantata+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
 
-<p>But since ruby1.9 we have SecureRandom natively and want to use that. Also simply removing the characters that do not fit in base62 will produce strings of differing length and we don&#8217;t want that. What to do?</p>
+    </head>
+    <body>
+    <div class="container">
+      <h1></h1>
+
+<p>Not the hardest of tasks, but nevertheless a discussed one: Creating random strings in ruby. And that would be base62 encoded strings, so that they can be used in URLs.</p>
+
+<p>So what to do? Using <a href="http://stackoverflow.com/a/88341/310497">this solution</a>? Not random enough.</p>
+
+<p>What about the solutions described in <a href="http://blog.logeek.fr/2009/7/2/creating-small-unique-tokens-in-ruby">this blog post</a>? Promising. And I like the ActiveSupport::SecureRandom method best.</p>
+
+<p>But since ruby1.9 we have SecureRandom natively and want to use that. Also simply removing the characters that do not fit in base62 will produce strings of differing length and we don't want that. What to do?</p>
 
 <p>Mashup!</p>
 
-<pre><code>SecureRandom.base64(6).gsub(/[$=+\/]/,65.+(rand(25)).chr)</code></pre>
+<pre><code>SecureRandom.base64(6).gsub(/[$=+\/]/,65.+(rand(25)).chr)
+</code></pre>
 
 <p>ProTip: play around with the base64 parameter to change the length of the generated string.</p>
-  </section>
-  <footer>
-    Included file 'disqus.html' not found in _includes directory
-  </footer>
-</article>
+
+
+
     </div>
-    
-  </div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
 
-  <footer class="content">
-    <p>I am Niels Hoffmann, software developer by profession and co-founder of pipapo.co where we build things like <a href="https://blabber.io">Blabber</a> and <a href="http://fandangocast.com">Fandango</a>. I am based in Berlin, Germany. Sometimes I write down my findings and insights on this blog. The rest of the time I am busy creating stuff with computers, mostly on the web.</p>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')</script>
 
-    <p>You can contact me via Xing, LinkedIn or on Twitter.</p>
-  </footer>
- 
 
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    <!-- build:js scripts/plugins.js -->
+    <!-- <script src="scripts/vendor/bootstrap/bootstrap-affix.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-alert.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-dropdown.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-tooltip.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-modal.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-transition.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-button.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-popover.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-typeahead.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-carousel.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-scrollspy.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-collapse.js"></script>
+    <script src="scripts/vendor/bootstrap/bootstrap-tab.js"></script> -->
+    <!-- endbuild -->
 </body>
 </html>
