@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>  Fixing Invalid Byte Sequence Once And For All |  zentralmaschine.net </title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+ 
+  <header class="content">
+    <h1><a href="/">Zentralmaschine</a></h1>
+  </header>
+
+  <div id="main">
+    <nav role="navigation">
+    </nav>
+ 
+    <div class="content">
+      <article>
+  <section>
+    <h1>Fixing Invalid Byte Sequence Once And For All</h1>
+    2012-02-24 15:03:24 +0100
+    <p>This was driving me nuts. As everybody knows ruby 1.9+ supports files in different encodings. Unfortunately it defaults to US-ASCII (at least on my machine) and thus breaks with every UTF-8 file that has a character not in the US-ASCII range.</p>
+
+<p>You know what I am talking about when you have seen one of these dreadful warnings:</p>
+
+<pre><code># bundle exec rake build
+rake aborted!
+invalid byte sequence in US-ASCII</code></pre>
+
+<h2 id='here_are_possible_solutions'>Here are possible solutions</h2>
+
+<p>Use magic comments and set the encoding in the top of each file like so</p>
+
+<pre><code># encoding: UTF-8
+umlaut_string = &quot;mlaut strng&quot;
+...</code></pre>
+
+<p>or set the encoding at the application level with</p>
+
+<pre><code>Encoding.default_external = Encoding::UTF_8 if RUBY_VERSION &gt; &quot;1.9&quot;</code></pre>
+
+<p>or set the LOCALE to something UTF-8ish</p>
+
+<pre><code>LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 my-ruby-command</code></pre>
+
+<p>or simply set the default encoding for ruby to UTF-8 with</p>
+
+<pre><code># /usr/bin/ruby -Ku</code></pre>
+
+<p>Actually, this is my preferred solution, because I want to have UTF-8 as the default and set it to any other encoding only when needed.</p>
+
+<p>You can make this permanent by including an export statement in your .bashrc or .zshrc</p>
+
+<pre><code>export RUBYOPT=-Ku</code></pre>
+  </section>
+  <footer>
+    Included file 'disqus.html' not found in _includes directory
+  </footer>
+</article>
+    </div>
+    
+  </div>
+
+  <footer class="content">
+    <p>I am Niels Hoffmann, software developer by profession and co-founder of pipapo.co where we build things like <a href="https://blabber.io">Blabber</a> and <a href="http://fandangocast.com">Fandango</a>. I am based in Berlin, Germany. Sometimes I write down my findings and insights on this blog. The rest of the time I am busy creating stuff with computers, mostly on the web.</p>
+
+    <p>You can contact me via Xing, LinkedIn or on Twitter.</p>
+  </footer>
+ 
+
+</body>
+</html>

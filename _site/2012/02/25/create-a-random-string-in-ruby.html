@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>  Create a Random String in Ruby |  zentralmaschine.net </title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+ 
+  <header class="content">
+    <h1><a href="/">Zentralmaschine</a></h1>
+  </header>
+
+  <div id="main">
+    <nav role="navigation">
+    </nav>
+ 
+    <div class="content">
+      <article>
+  <section>
+    <h1>Create a Random String in Ruby</h1>
+    2012-02-25 03:37:42 +0100
+    <p>Not the hardest of tasks, but nevertheless a discussed one: Creating random strings in ruby. And that would be base62 encoded strings, so that they can be used in URLs.</p>
+
+<p>So what to do? Using <a href='http://stackoverflow.com/a/88341/310497'>this solution</a>? Not random enough.</p>
+
+<p>What about the solutions described in <a href='http://blog.logeek.fr/2009/7/2/creating-small-unique-tokens-in-ruby'>this blog post</a>? Promising. And I like the ActiveSupport::SecureRandom method best.</p>
+
+<p>But since ruby1.9 we have SecureRandom natively and want to use that. Also simply removing the characters that do not fit in base62 will produce strings of differing length and we don&#8217;t want that. What to do?</p>
+
+<p>Mashup!</p>
+
+<pre><code>SecureRandom.base64(6).gsub(/[$=+\/]/,65.+(rand(25)).chr)</code></pre>
+
+<p>ProTip: play around with the base64 parameter to change the length of the generated string.</p>
+  </section>
+  <footer>
+    Included file 'disqus.html' not found in _includes directory
+  </footer>
+</article>
+    </div>
+    
+  </div>
+
+  <footer class="content">
+    <p>I am Niels Hoffmann, software developer by profession and co-founder of pipapo.co where we build things like <a href="https://blabber.io">Blabber</a> and <a href="http://fandangocast.com">Fandango</a>. I am based in Berlin, Germany. Sometimes I write down my findings and insights on this blog. The rest of the time I am busy creating stuff with computers, mostly on the web.</p>
+
+    <p>You can contact me via Xing, LinkedIn or on Twitter.</p>
+  </footer>
+ 
+
+</body>
+</html>

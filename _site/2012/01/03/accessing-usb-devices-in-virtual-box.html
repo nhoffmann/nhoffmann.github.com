@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>  Accessing USB Device in Virtual Box |  zentralmaschine.net </title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+ 
+  <header class="content">
+    <h1><a href="/">Zentralmaschine</a></h1>
+  </header>
+
+  <div id="main">
+    <nav role="navigation">
+    </nav>
+ 
+    <div class="content">
+      <article>
+  <section>
+    <h1>Accessing USB Device in Virtual Box</h1>
+    2012-01-03 20:57:41 +0100
+    <p>Turned out that accessing a FlashCard from a VirtualBox Debian running on OS X Lion is not so straight forward as first anticipated. Well, a little googling found the answers needed and here&#8217;s a setup that worked for me:</p>
+
+<p>Plug in the card reader (or any USB device) to your computer and let Finder mount it.</p>
+
+<p>In VirtualBox select <code>Settings -> Ports -> USB</code>. That should you present with a dialog where you can add and edit Filters. <a href='http://zentralmaschine.net/wp-content/uploads/2012/01/Screen-Shot-2012-01-03-at-8.27.51-PM1.png'><img alt='Settings &#8594;v Ports &#8594; USB' class='size-full wp-image-23' height='630' src='http://zentralmaschine.net/wp-content/uploads/2012/01/Screen-Shot-2012-01-03-at-8.27.51-PM1.png' title='Settings &#8594;v Ports &#8594; USB' width='766' /></a></p>
+
+<p>Click the green plus sign and in the then opening dialog delete everything except <em>Name</em>, <em>Vendor ID</em> and <em>Product ID</em>.</p>
+<a href='http://zentralmaschine.net/wp-content/uploads/2012/01/Screen-Shot-2012-01-03-at-8.49.11-PM.png'><img alt='Your Vendor and Product ID will probably differ' class='size-full wp-image-25' height='464' src='http://zentralmaschine.net/wp-content/uploads/2012/01/Screen-Shot-2012-01-03-at-8.49.11-PM.png' title='Your Vendor and Product ID will probably differ' width='355' /></a>
+<p>Now start your VirtualBox Debian and check <code>dmesg</code>. The reader should have been recognised as <code>/dev/sda</code>.</p>
+  </section>
+  <footer>
+    Included file 'disqus.html' not found in _includes directory
+  </footer>
+</article>
+    </div>
+    
+  </div>
+
+  <footer class="content">
+    <p>I am Niels Hoffmann, software developer by profession and co-founder of pipapo.co where we build things like <a href="https://blabber.io">Blabber</a> and <a href="http://fandangocast.com">Fandango</a>. I am based in Berlin, Germany. Sometimes I write down my findings and insights on this blog. The rest of the time I am busy creating stuff with computers, mostly on the web.</p>
+
+    <p>You can contact me via Xing, LinkedIn or on Twitter.</p>
+  </footer>
+ 
+
+</body>
+</html>
