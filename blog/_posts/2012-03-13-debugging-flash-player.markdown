@@ -2,6 +2,9 @@
 layout: post
 title: Debugging Flashplayer
 date: 2012-03-13 21:43:19.000000000 +01:00
+description: Crucial information on debugging ActionScript.
+tags:
+  - AS3
 ---
 Folks who do Actionscript 3 development on a daily basis probably know this. Probably everybody knows this except me. There is a debug version of the Adobe Flash Player:
 

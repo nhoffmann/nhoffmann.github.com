@@ -2,6 +2,8 @@
 layout: post
 title: Fixing Invalid Byte Sequence Once And For All
 date: 2012-02-24 15:03:24.000000000 +01:00
+tags:
+  - Ruby
 ---
 
 This was driving me nuts. As everybody knows ruby 1.9+ supports files in different encodings. Unfortunately it defaults to US-ASCII (at least on my machine) and thus breaks with every UTF-8 file that has a character not in the US-ASCII range.

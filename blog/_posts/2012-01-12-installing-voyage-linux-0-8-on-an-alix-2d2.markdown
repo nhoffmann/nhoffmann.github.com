@@ -2,6 +2,8 @@
 layout: post
 title: Installing Voyage Linux 0.8 on Alix 2D2
 date: 2012-01-12 14:57:17.000000000 +01:00
+tags:
+  - Alix
 ---
 I had this <a href="http://www.pcengines.ch/alix2d2.htm" title="ALIX 2D2">ALIX 2D2</a> lying around for quite some time. The initial idea was to build a custom router/wlan-accespoint, but I never found the time. Now I at least installed a system and am now able to play around with it. Following are some insights on the process.
 

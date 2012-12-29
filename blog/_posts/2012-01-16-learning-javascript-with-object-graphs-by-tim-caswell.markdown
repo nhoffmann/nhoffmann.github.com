@@ -2,6 +2,8 @@
 layout: post
 title: Learning Javascript With Object Graphs By Tim Caswell
 date: 2012-01-16 11:08:10.000000000 +01:00
+tags:
+  - Documentation
 ---
 I just recently stumbled upon this very valuable series of articles explaining Javacript objects, prototypical inheritance, closures and the like in visually appealing fashion. Tim Caswell uses object graphs to make you grasp the subject and that works extremely well.
 
