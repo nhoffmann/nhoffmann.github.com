@@ -3,6 +3,16 @@ layout: default
 title: Zentralmaschine
 ---
 
+<header class="row">
+  <div class="span12">
+    <h1>
+      {{page.title}}
+    </h1>
+  </div>
+</header>
+
+<hr>
+
 <section id="teaser-box">
   <div class="row">
     <article class="span12" id="teaser-intro">
@@ -31,14 +41,6 @@ title: Zentralmaschine
         </li>
       </ul>
     </div>
-    <!-- <div class="span6" id="latest-online-readings">
-      <h3>My latest online reads</h3>
-      <ul class="delicious-links">
-        {% delicious username:pipapo count:15 ttl:3600 %}
-        <li><a href="{{ item.link }}" title="{{ item.description }}" rel="external">{{ item.title }}</a></li>
-        {% enddelicious %}
-      </ul>
-    </div> -->
   </div>
 </section>
 
