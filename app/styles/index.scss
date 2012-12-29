@@ -5,9 +5,10 @@
   @include content-box();
 }
 
+
 .blog-post {
   margin: 20px 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid $hrBorder;
 }
 
 .inline {
@@ -27,5 +28,6 @@
       text-decoration:none;
     }
   }
-
+  margin-bottom: 60px;
+  margin-left: 0;
 }

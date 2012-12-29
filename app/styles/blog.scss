@@ -6,12 +6,24 @@ body {
 }
 
 .container {
-
+  margin-top: 40px;
 }
 
 .sidebar {
   // color: $grayLight;
+  margin-right: 70px;
+
+  .links {
+    margin-top: 50px;
+
+    h3 {
+      line-height: 1.5;
+    }
+  }
 }
+
+
+
 .posts {
 
   // width: 67%;

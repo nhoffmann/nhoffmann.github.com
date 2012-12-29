@@ -38,13 +38,13 @@ h3 {
 }
 
 h4,h5,h6 {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.1;
 }
 
 .copyright {
   @include font-sans-serif(13px);
-  color: $grayLighter;
+  color: $grayLight;
 }
 
 .footer-profile {

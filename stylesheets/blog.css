@@ -160,13 +160,13 @@ body {
 
 /* line 22, ../app/styles/compass_twitter_bootstrap/_scaffolding.scss */
 a {
-  color: #0088cc;
+  color: #9d261d;
   text-decoration: none;
 }
 
 /* line 26, ../app/styles/compass_twitter_bootstrap/_scaffolding.scss */
 a:hover {
-  color: #005580;
+  color: #5c1611;
   text-decoration: underline;
 }
 
@@ -716,7 +716,7 @@ h4 small {
 /* line 72, ../app/styles/compass_twitter_bootstrap/_type.scss */
 .page-header {
   padding-bottom: 13.5px;
-  margin: 29px 0 43.5px;
+  margin: 0 0 43.5px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -2985,15 +2985,15 @@ table .span24 {
 .dropdown-submenu:hover > a {
   text-decoration: none;
   color: white;
-  background-color: #0088cc;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #9d261d;
+  background-color: #94241b;
+  background-image: -moz-linear-gradient(top, #9d261d, #872119);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9d261d), to(#872119));
+  background-image: -webkit-linear-gradient(top, #9d261d, #872119);
+  background-image: -o-linear-gradient(top, #9d261d, #872119);
+  background-image: linear-gradient(to bottom, #9d261d, #872119);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99251c', endColorstr='#832018', GradientType=0);
 }
 
 /* line 100, ../app/styles/compass_twitter_bootstrap/_dropdowns.scss */
@@ -3002,15 +3002,15 @@ table .span24 {
   color: white;
   text-decoration: none;
   outline: 0;
-  background-color: #0088cc;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #9d261d;
+  background-color: #94241b;
+  background-image: -moz-linear-gradient(top, #9d261d, #872119);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9d261d), to(#872119));
+  background-image: -webkit-linear-gradient(top, #9d261d, #872119);
+  background-image: -o-linear-gradient(top, #9d261d, #872119);
+  background-image: linear-gradient(to bottom, #9d261d, #872119);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99251c', endColorstr='#832018', GradientType=0);
 }
 
 /* line 112, ../app/styles/compass_twitter_bootstrap/_dropdowns.scss */
@@ -3371,29 +3371,29 @@ button.close {
 .btn-primary {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006ecc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-color: #9d361d;
+  background-image: -moz-linear-gradient(top, #9d261d, #9d511d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9d261d), to(#9d511d));
+  background-image: -webkit-linear-gradient(top, #9d261d, #9d511d);
+  background-image: -o-linear-gradient(top, #9d261d, #9d511d);
+  background-image: linear-gradient(to bottom, #9d261d, #9d511d);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0042c7', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99251c', endColorstr='#994e1c', GradientType=0);
+  border-color: #9d511d #9d511d #5c2f11;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0044cc;
+  *background-color: #9d511d;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../app/styles/compass_twitter_bootstrap/_mixins.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
   color: white;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #9d511d;
+  *background-color: #874619;
 }
 /* line 497, ../app/styles/compass_twitter_bootstrap/_mixins.scss */
 .btn-primary:active, .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #723b15 \9;
 }
 
 /* line 139, ../app/styles/compass_twitter_bootstrap/_buttons.scss */
@@ -3586,7 +3586,7 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #0088cc;
+  color: #9d261d;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -3594,7 +3594,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 206, ../app/styles/compass_twitter_bootstrap/_buttons.scss */
 .btn-link:hover {
-  color: #005580;
+  color: #5c1611;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3769,7 +3769,7 @@ input[type="submit"].btn.btn-mini {
 }
 /* line 152, ../app/styles/compass_twitter_bootstrap/_button-groups.scss */
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #9d511d;
 }
 /* line 155, ../app/styles/compass_twitter_bootstrap/_button-groups.scss */
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -4010,7 +4010,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #9d261d;
 }
 
 /* line 70, ../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4113,7 +4113,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: white;
-  background-color: #0088cc;
+  background-color: #9d261d;
 }
 
 /* line 158, ../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4191,15 +4191,15 @@ input[type="submit"].btn.btn-mini {
 
 /* line 207, ../app/styles/compass_twitter_bootstrap/_navs.scss */
 .nav .dropdown-toggle .caret {
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #9d261d;
+  border-bottom-color: #9d261d;
   margin-top: 6px;
 }
 
 /* line 212, ../app/styles/compass_twitter_bootstrap/_navs.scss */
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #5c1611;
+  border-bottom-color: #5c1611;
 }
 
 /* move down carets for tabs */
@@ -5556,7 +5556,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 37, ../app/styles/compass_twitter_bootstrap/_thumbnails.scss */
 a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #9d261d;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -6192,7 +6192,7 @@ h3 {
 
 /* line 40, ../app/styles/_main.scss */
 h4, h5, h6 {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.1;
 }
 
@@ -6202,7 +6202,7 @@ h4, h5, h6 {
   font-size: 13px;
   font-weight: normal;
   line-height: 29px;
-  color: #eeeeee;
+  color: #999999;
 }
 
 /* line 50, ../app/styles/_main.scss */
@@ -6219,4 +6219,22 @@ h4, h5, h6 {
 /* line 4, ../app/styles/blog.scss */
 body {
   background: white;
+}
+
+/* line 8, ../app/styles/blog.scss */
+.container {
+  margin-top: 40px;
+}
+
+/* line 12, ../app/styles/blog.scss */
+.sidebar {
+  margin-right: 70px;
+}
+/* line 16, ../app/styles/blog.scss */
+.sidebar .links {
+  margin-top: 50px;
+}
+/* line 19, ../app/styles/blog.scss */
+.sidebar .links h3 {
+  line-height: 1.5;
 }
