@@ -44,16 +44,16 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily:        'Istok Web', Verdana, Helvetica, sans-serif;// "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansFontFamily:        'Lato', Verdana, Helvetica, sans-serif;// "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       'Lora', Georgia, serif;//Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          18px !default;
-$baseFontFamily:        $serifFontFamily !default;
+$baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        29px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    $sansFontFamily !default;//inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    $serifFontFamily !default;//inherit !default; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 

@@ -2,11 +2,21 @@
 // @import "compass_twitter_bootstrap_responsive";
 
 body {
-  background: $white;
+  background-color: rgba(255,255,255,0.8);
+  background-image: none;
 }
 
 .container {
   margin-top: 40px;
+}
+
+h1 {
+  a {
+    color: $textColor;
+  }
+  a, a:hover {
+    text-decoration: none;
+  }
 }
 
 .sidebar {
@@ -26,9 +36,12 @@ body {
 
 .posts {
 
-  // width: 67%;
-  // padding: 0 20px 100px;
-  // @include content-box();
+  .tags {
+    font-size: 0.9em;
+    strong {
+
+    }
+  }
 
 }
 

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400,700,400italic,700italic|Exo:500,600,700,800,900,800italic,700italic,600italic,500italic);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 /*
  * Bootstrap v2.1.0
@@ -151,7 +152,7 @@ textarea {
 /* line 9, ../app/styles/compass_twitter_bootstrap/_scaffolding.scss */
 body {
   margin: 0;
-  font-family: "Lora", Georgia, serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 29px;
   color: #333333;
@@ -644,7 +645,7 @@ cite {
 /* line 43, ../app/styles/compass_twitter_bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 14.5px 0;
-  font-family: "Istok Web", Verdana, Helvetica, sans-serif;
+  font-family: "Lora", Georgia, serif;
   font-weight: bold;
   line-height: 1;
   color: inherit;
@@ -965,7 +966,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
 }
 
 /* line 55, ../app/styles/compass_twitter_bootstrap/_forms.scss */
@@ -4546,7 +4547,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Istok Web", Verdana, Helvetica, sans-serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -6157,59 +6158,59 @@ a.label:hover, a.badge:hover {
   box-sizing: border-box;
 }
 
-/* line 10, ../app/styles/_main.scss */
+/* line 13, ../app/styles/_main.scss */
 body {
-  background: url(../images/fabric_plaid.png);
+  background-image: url(../images/fabric_plaid.png);
 }
 
-/* line 15, ../app/styles/_main.scss */
+/* line 18, ../app/styles/_main.scss */
 .centered-text {
   text-align: center;
 }
 
-/* line 18, ../app/styles/_main.scss */
+/* line 21, ../app/styles/_main.scss */
 .right-text {
   text-align: right;
 }
 
-/* line 25, ../app/styles/_main.scss */
+/* line 28, ../app/styles/_main.scss */
 h1 {
   font-size: 2.5em;
   line-height: 1.1;
 }
 
-/* line 30, ../app/styles/_main.scss */
+/* line 33, ../app/styles/_main.scss */
 h2 {
   font-size: 1.3em;
   line-height: 1.1;
 }
 
-/* line 35, ../app/styles/_main.scss */
+/* line 38, ../app/styles/_main.scss */
 h3 {
   font-size: 1.2em;
   line-height: 1.1;
 }
 
-/* line 40, ../app/styles/_main.scss */
+/* line 43, ../app/styles/_main.scss */
 h4, h5, h6 {
   font-size: 1em;
   line-height: 1.1;
 }
 
-/* line 45, ../app/styles/_main.scss */
+/* line 48, ../app/styles/_main.scss */
 .copyright {
-  font-family: "Istok Web", Verdana, Helvetica, sans-serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 29px;
   color: #999999;
 }
 
-/* line 50, ../app/styles/_main.scss */
+/* line 53, ../app/styles/_main.scss */
 .footer-profile {
   margin-top: 80px;
   margin-bottom: 80px;
-  font-family: "Istok Web", Verdana, Helvetica, sans-serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 29px;
@@ -6218,23 +6219,38 @@ h4, h5, h6 {
 
 /* line 4, ../app/styles/blog.scss */
 body {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: none;
 }
 
-/* line 8, ../app/styles/blog.scss */
+/* line 9, ../app/styles/blog.scss */
 .container {
   margin-top: 40px;
 }
 
-/* line 12, ../app/styles/blog.scss */
+/* line 14, ../app/styles/blog.scss */
+h1 a {
+  color: #333333;
+}
+/* line 17, ../app/styles/blog.scss */
+h1 a, h1 a:hover {
+  text-decoration: none;
+}
+
+/* line 22, ../app/styles/blog.scss */
 .sidebar {
   margin-right: 70px;
 }
-/* line 16, ../app/styles/blog.scss */
+/* line 26, ../app/styles/blog.scss */
 .sidebar .links {
   margin-top: 50px;
 }
-/* line 19, ../app/styles/blog.scss */
+/* line 29, ../app/styles/blog.scss */
 .sidebar .links h3 {
   line-height: 1.5;
+}
+
+/* line 39, ../app/styles/blog.scss */
+.posts .tags {
+  font-size: 0.9em;
 }

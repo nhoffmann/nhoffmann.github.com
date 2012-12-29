@@ -150,7 +150,7 @@ textarea {
 /* line 9, ../../app/styles/compass_twitter_bootstrap/_scaffolding.scss */
 body {
   margin: 0;
-  font-family: "Lora", Georgia, serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 29px;
   color: #333333;
@@ -643,7 +643,7 @@ cite {
 /* line 43, ../../app/styles/compass_twitter_bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 14.5px 0;
-  font-family: "Istok Web", Verdana, Helvetica, sans-serif;
+  font-family: "Lora", Georgia, serif;
   font-weight: bold;
   line-height: 1;
   color: inherit;
@@ -964,7 +964,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
 }
 
 /* line 55, ../../app/styles/compass_twitter_bootstrap/_forms.scss */
@@ -4635,7 +4635,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Istok Web", Verdana, Helvetica, sans-serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;

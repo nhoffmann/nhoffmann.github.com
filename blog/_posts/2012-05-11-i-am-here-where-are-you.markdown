@@ -2,8 +2,11 @@
 layout: post
 title: I Am Here Where Are You?
 date: 2012-05-11 01:22:01.000000000 +02:00
+description: A super simple web application to share your current location with others.
+tags:
+  - Sideproject
 ---
-[I am here! Where are you?](http://iahway.meteor.com) is a super simple web application to share you current location with others.
+[I am here! Where are you?](http://iahway.meteor.com) is a super simple web application to share your current location with others.
 
 Works great on smartphones, tablets, laptops or desktop pcs. The only prerequisites is a browser that supports sensing your current location. Try it out for yourself:
 
