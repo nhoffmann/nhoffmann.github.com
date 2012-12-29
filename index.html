@@ -33,11 +33,11 @@ title: Zentralmaschine
       <ul class="unstyled">
         {% for post in site.posts limit:5 %}
           <li class="blog-post">
-            <a href="{{ post.url }}">{{ post.title }}</a> <span class="pull-right">{{ post.date | date: "%e %b %Y" }} </span>
+            <a href="{{ post.url }}">{{ post.title }}</a> <span class="pull-right">{{ post.date | date: "%e. %b %Y" }} </span>
           </li>
         {% endfor %}
         <li>
-          It is mostly a technical blog with interesting bits on Ruby on Rails web development, my sideprojects and more. Here is the <a href="blog/">link</a>.
+          This is a mostly technical blog with interesting bits on Ruby on Rails web development and more. Here is the <a href="blog/">link</a>.
         </li>
       </ul>
     </div>
