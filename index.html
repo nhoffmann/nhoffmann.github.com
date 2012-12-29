@@ -1,0 +1,105 @@
+---
+layout: default
+title: Zentralmaschine
+---
+
+<header class="row">
+  <div class="span12">
+    <h1>
+      Zentralmaschine
+      <small></small>
+    </h1>
+  </div>
+
+</header>
+
+<hr>
+
+<section id="teaser-box">
+  <div class="row">
+    <article class="span12" id="teaser-intro">
+      <p>You have found the master site of Niels Hoffmann's online identity. I am a Berlin based Ruby on Rails and iOS developer for hire. You can find my CV in all its glory and completeness on <a href="http://linkedin.com/in/nielsphoffmann">linkedin</a>. You can also find me on <a href="https://github.com/nhoffmann" title="I'm on github">github</a>, follow me on <a href="https://twitter.com/zentralmaschine"  title="Follow me on twitter">twitter</a> or just <a href="#contact">contact</a> me.</p>
+      <p>I build things on the internet and sometimes release them. I am the author of <a href="https://blabber.io">Blabber</a> and <a href="http://fandangocast.com">Fandango</a>.</p>
+
+      <p>When I am not hacking on a computer, I play electric and upright bass in a couple of bands, but that's a different story.</p>
+    </article>
+  </div>
+</section>
+
+<hr>
+
+<section id="latest-activity">
+  <div class="row">
+    <div class="span6" id="latest-blog-posts">
+      <h3>Latest posts from my blog</h3>
+      <ul class="unstyled">
+        {% for post in site.posts limit:5 %}
+          <li class="blog-post">
+            <a href="{{ post.url }}">{{ post.title }}</a> <span class="pull-right">{{ post.date | date: "%e %b %Y" }} </span>
+          </li>
+        {% endfor %}
+        <li>
+          It is mostly a technical blog with interesting bits on Ruby on Rails web development, my sideprojects and more. Here is the <a href="blog/">link</a>.
+        </li>
+      </ul>
+    </div>
+    <div class="span6" id="latest-online-readings">
+      <h3>My latest online reads</h3>
+      <ul class="delicious-links">
+        {% delicious username:pipapo count:15 ttl:3600 %}
+        <li><a href="{{ item.link }}" title="{{ item.description }}" rel="external">{{ item.title }}</a></li>
+        {% enddelicious %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id="contact">
+
+  <div class="row ">
+    <div class="span12 centered-text">
+      <h3>Want to say hi? Please do:</h3>
+      <h3><a href="mailto:niels@zentralmaschine.net">niels@zentralmaschine.net</a></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12 centered-text">
+      <ul class="inline accounts">
+        <li><a href="mailto:niels@zentralmaschine.net"  title="Write me an email!">&#9993;</a></li>
+        <li><a href="http://de.linkedin.com/in/nielsphoffmann"  title="I'm on LinkedIn">&#62232;</a></li>
+        <!-- <li><a href="xing"  title="I'm on XING">Xing</a></li> -->
+        <li><a href="https://github.com/nhoffmann" title="I'm on github">&#62208;</a></li>
+        <!-- <li><a href="http://stackoverflow.com/users/310497/zentralmaschine"  title="I'm on StackOverflow">StackOverflow</a></li> -->
+        <li><a href="https://twitter.com/zentralmaschine"  title="Follow me on twitter">&#62217;</a></li>
+        <li><a href="skype:zentralmaschine?add" title="Add me on skype">&#62265;</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h4>Niels Hoffmann</h4>
+      <address>
+        Weichselstr. 57
+        <br>
+        12045 Berlin, Germany
+      </address>
+      <address>
+        <abbr title="Phone">P:</abbr> +49 176 - 66 60 66 28
+      </address>
+    </div>
+
+    <div class="span4 offset4 right-text">
+      <h4>Legal information</h4>
+      <p>Follow thes links for <a href="legal.html">disclaimers</a> and <a href="legal.html">legal details</a>.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<footer>
+  <span class="copyright">&copy; 2012 zentralmaschine.net</span>
+</footer>
+

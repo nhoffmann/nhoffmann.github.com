@@ -1,0 +1,38 @@
+@import "main";
+// @import "compass_twitter_bootstrap_responsive";
+
+body {
+  background: $white;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.sidebar {
+  // color: $grayLight;
+  margin-right: 70px;
+
+  .links {
+    margin-top: 50px;
+
+    h3 {
+      line-height: 1.5;
+    }
+  }
+}
+
+
+
+.posts {
+
+  // width: 67%;
+  // padding: 0 20px 100px;
+  // @include content-box();
+
+}
+
+
+
+
+

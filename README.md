@@ -1,2 +1,1 @@
-nhoffmann.github.com
-====================
+Portfolio site and personal blog
