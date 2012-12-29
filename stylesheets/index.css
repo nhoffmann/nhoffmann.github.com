@@ -2172,7 +2172,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/images/glyphicons-halflings.png?1356740793');
+  background-image: url('/images/glyphicons-halflings.png?1356748405');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2187,7 +2187,7 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/images/glyphicons-halflings-white.png?1356740793');
+  background-image: url('/images/glyphicons-halflings-white.png?1356748405');
 }
 
 /* line 42, ../app/styles/compass_twitter_bootstrap/_sprites.scss */
