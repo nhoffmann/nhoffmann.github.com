@@ -33,7 +33,7 @@ title: Zentralmaschine
     <div class="span6" id="latest-blog-posts">
       <h3>Latest posts from my blog</h3>
       <ul class="unstyled">
-        {% for post in site.posts limit:5 %}
+        {% for post in paginator.posts limit:5 %}
           <li class="blog-post">
             <a href="{{ post.url }}">{{ post.title }}</a> <span class="pull-right">{{ post.date | date: "%e %b %Y" }} </span>
           </li>
