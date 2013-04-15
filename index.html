@@ -28,16 +28,30 @@ title: Zentralmaschine
 
 <section id="latest-activity">
   <div class="row">
-    <div class="span6" id="latest-blog-posts">
+    <div class="span5" id="latest-blog-posts">
       <h3>Latest posts from my blog</h3>
       <ul class="unstyled">
-        {% for post in site.posts limit:5 %}
+        {% for post in site.posts limit:6 %}
           <li class="blog-post">
             <a href="{{ post.url }}">{{ post.title }}</a> <span class="pull-right">{{ post.date | date: "%e. %b %Y" }} </span>
           </li>
         {% endfor %}
         <li>
-          This is a mostly technical blog with interesting bits on Ruby on Rails web development and more. Here is the <a href="blog/">link</a>.
+          This is a mostly technical blog with interesting bits on things I am currently working on and more. Here is the <a href="blog/">link</a>.
+        </li>
+      </ul>
+    </div>
+    <div class="span6 offset1" id="lastest-projects">
+      <h3>Latest project</h3>
+      <ul class="unstyled">
+        <li>
+          <iframe src="http://player.vimeo.com/video/63636954?title=0&amp;byline=0&amp;portrait=0" width="460" height="265" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen style="margin-top: 3px;"></iframe>
+          <a href="http://www.drawnimal.com">DRAWNIMAL</a>
+          <p>
+            In collaboration with <a href="http://www.lucaszanotto.com/">Lucas Zanotto</a> and <a href="http://www.ulrichtroyer.com/">Ulrich Troyer</a>.
+            <br>
+            Go check it out on the <a href="https://itunes.apple.com/app/drawnimal/id586239095">AppStore</a>!
+          </p>
         </li>
       </ul>
     </div>
