@@ -25,13 +25,34 @@ $link-color: $brand-color;
 
 $headings-font-weight: 600;
 
-$container-desktop: 950px;
-$container-large-desktop: 950px;
+$container-desktop: 920px;
+$container-large-desktop: 920px;
 
 @import "bootstrap";
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.container {
+  flex: 1;
+}
+.top {
+  align-self: flex-start;
+}
+.center {
+  align-self: flex-start;
+}
+
+footer {
+  text-align: center;
+}
+
+
 .icon {
   font-family: "entypo";
-  padding-right: 10px;
 }
 
