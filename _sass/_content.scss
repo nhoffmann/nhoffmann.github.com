@@ -1,0 +1,29 @@
+.content {
+
+}
+
+ .content__section {
+  @include bottom-border;
+}
+
+.content__portrait {
+  float: left;
+  margin: 0 30px 20px 0;
+  border-radius: 10%;
+}
+
+.content__link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.content__link-list-element {
+  margin-bottom: 5px;
+}
+
+.content__date {
+  display: inline-block;
+  width: 120px;
+  color: $grey-color;
+  font-size: $font-size-small;
+}

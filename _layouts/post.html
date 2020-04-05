@@ -1,37 +1,19 @@
 ---
-layout: blog
+layout: default
 ---
 
-<article>
-  <header>
-    <div class="page-header">
-      <h1>
-        {{ page.title }}
-        <br>
-        <small>{{page.date | date: "%e %b %Y"}}</small>
-      </h1>
-    </div>
+<article class="article">
+  <header class="article__header">
+    <h1 class="article__title">{{ page.title }}</h1>
+    <small class="article__date">{{page.date | date: "%e %b %Y"}}</small>
   </header>
 
   <section>
     {{ content }}
   </section>
-  <hr>
-
-  <footer>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'zentralmaschine'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-  </footer>
 </article>
+
+<section class="post-contact">
+  <p>I am Niels Hoffmann, software developer, music afficionade, sailor.<br>Take a look at <a href="{{site.baseurl}}/assets/2020_Niels_Hoffmann_CV.pdf">my CV</a> and check out my <a href="/#projects">projects.</a><br>You can follow me on Twitter at <a href="">@zentralmaschine</a>, get in touch via email to <a mailto="niels@zentralmaschine.net">niels@zentralmaschine.net</a> and find me on <a href="https://github.com/nhoffmann">Github</a> or
+  <a href="https://www.linkedin.com/in/nielsphoffmann">LinkedIn</a>.</p>
+</section>

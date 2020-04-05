@@ -1,0 +1,23 @@
+body {
+  color: $text-color;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+a {
+  color: $link-color;
+
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: $headings-font-size;
+  font-weight: $headings-font-weight;
+}
+
+.site {
+  margin: 40px auto 80px;
+
+  max-width: 650px;
+}

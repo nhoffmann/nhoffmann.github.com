@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400,700,400italic,700italic|Exo:500,600,700,800,900,800italic,700italic,600italic,500italic);
+
+
+$font-family: "Lato", Verdana, Helvetica, sans-serif;
+
+$font-size-base:   18px;
+$line-height-base: 1.5;
+
+$text-color:       #444444;
+$brand-color:      #9d261d;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$link-color: $brand-color;
+$nav-link-color: $grey-color;
+
+$headings-font-size: 24px;
+$headings-font-weight: 600;
+
+$font-size-small: 15px;
