@@ -1,3 +1,4 @@
 markdown: kramdown
-exclude: ['app', 'node_modules', 'Gruntfile.js']
+plugins:
+  - jekyll-paginate
 paginate: 6
