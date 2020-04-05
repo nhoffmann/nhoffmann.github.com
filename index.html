@@ -3,24 +3,44 @@ layout: default
 title: Niels Hoffmann
 ---
 
-<div class="row">
-  <div class="col-sm-12">
-    <h1>
-      <a href="https://twitter.com/zentralmaschine" title="Follow on twitter">
-        <span class="icon">&#62217;</span>
-        {{page.title}}
-      </a>
-      <small>
-      is a software developer. He lives in Berlin, Germany where he builds digital toys with <a href="http://www.yatatoy.com">YATATOY</a> and cofounded <a href="https://askhelmut.com">ASK HELMUT</a>, your digital guide for cultural adventure.
-      <br>
-      He is currently working full-time on ASK HELMUT.
-      <br>
-      The latest project he collaborated on is <a href="http://www.yatatoy.com/loopimal">LOOPIMAL</a>, your kid’s first entry into the world of computer sequencing. You should download <a href="http://www.yatatoy.com/loopimal">LOOPIMAL</a> from the <a href="https://itunes.apple.com/de/app/loopimal/id964743113">App Store</a> now!
-      <br>
-      <iframe src="https://player.vimeo.com/video/130329584?title=0&amp;byline=0&amp;portrait=0" width="300" height="169" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen style="margin-top: 3px;"></iframe>
-    </small>
-    </h1>
+<section class="content__section" id="home">
+  <img class="content__portrait" src="{{site.baseurl}}/assets/2020_Portrait.jpg" width="250px" />
+  <p>Hi there! My name is Niels Hoffmann. I am a software engineer living in Berlin, Germany.</p>
+  <p>I cofounded <a href="https://askhelmut.com">ASK HELMUT</a>, the curated event discovery platform and am a founding member of digital toy builders <a href="http://yatatoy.com">YATATOY</a> and many other things which you can read about in <a href="{{site.baseurl}}/assets/2020_Niels_Hoffmann_CV.pdf">my CV</a>.</p>
+  <p> I like to break down complex problems into understandable units to create high quality software with a focus on clean and maintainable code. My experience has taught me that knowledge sharing through pair programming and code reviews, automated linting and testing through continuous integration are half the way to building and running successful development teams. The rest of the way are integrity and not shying away from hard conversations, always conducting them with emotional intelligence.</p>
+  <p>When I am not doing things in front of a computer, I like to go sailing and play science fiction infused Krautrock with <a href="https://einseinseins.bandcamp.com">Einseinseins</a>.</p>
+</section>
 
-    <h3><a href="mailto:niels@zentralmaschine.net"  title="Write an email!"><span class="icon">&#9993;</span> niels@zentralmaschine.net</a></h3>
-  </div>
-</div>
+<section class="content__section" id="projects">
+  <h2>Projects</h2>
+
+  <ul>
+    <li>Life</li>
+    <li>Loopimal</li>
+    <li>Drawnimal</li>
+    <li>Blabber</li>
+    <li>Fandangocast</li>
+  </ul>
+</section>
+
+<section class="content__section" id="posts">
+  <h2>Posts</h2>
+  <ul class="content__link-list">
+  {% for post in site.posts %}
+    <li class="content__link-list-element">
+      <span class="content__date">{{ post.date | date_to_string }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="content__section" id="contact">
+  <h2>Contact</h2>
+  <p>Don't hesitate to send me an email at <a href="mailto:niels@zentralmaschine.net"  title="Write an email!">niels@zentralmaschine.net</a>.</p>
+  <p>Take a loot at <a href="{{site.baseurl}}/assets/2020_Niels_Hoffmann_CV.pdf">my CV</a>. You can also find me on
+  <a href="https://twitter.com/zentralmaschine" title="Follow on twitter">Twitter</a>,
+  <a href="https://github.com/nhoffmann">Github</a> or
+  <a href="https://www.linkedin.com/in/nielsphoffmann">LinkedIn</a>.
+  </p>
+</section>

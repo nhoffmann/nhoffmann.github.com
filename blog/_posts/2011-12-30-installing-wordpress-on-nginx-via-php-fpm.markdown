@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Installing Wordpress on NGINX via php-fpm
 date: 2011-12-30 10:05:56.000000000 +01:00
 ---

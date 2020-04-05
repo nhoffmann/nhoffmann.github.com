@@ -1,0 +1,5 @@
+@mixin bottom-border {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $grey-color-light;
+}
