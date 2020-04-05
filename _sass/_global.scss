@@ -9,6 +9,12 @@ a {
   color: $link-color;
 
   text-decoration: none;
+
+  transition: color 250ms ease;
+
+  &:hover {
+    color: $link-color-hover;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -13,7 +13,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$link-color: $brand-color;
+$link-color: lighten($brand-color, 10%);
+$link-color-hover: $brand-color;
 $nav-link-color: $grey-color;
 
 $headings-font-size: 24px;

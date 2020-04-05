@@ -28,4 +28,8 @@
 
 .header__nav-link {
   color: $nav-link-color;
+
+  &:hover {
+    color: $text-color;
+  }
 }
