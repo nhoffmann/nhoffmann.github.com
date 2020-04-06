@@ -1,0 +1,31 @@
+.project {
+  clear: both;
+
+  margin-bottom: 30px;
+}
+
+.project__title {
+  margin: 0;
+}
+
+.project__media {
+  width: 300px;
+
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.project__image {
+  border: 1px solid $grey-color-light;
+}
+
+.project__facts {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  color: $grey-color;
+  font-size: $font-size-small;
+}

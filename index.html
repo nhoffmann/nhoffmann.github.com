@@ -14,13 +14,31 @@ title: Niels Hoffmann
 <section class="content__section" id="projects">
   <h2>Projects</h2>
 
-  <ul>
-    <li>Life</li>
-    <li>Loopimal</li>
-    <li>Drawnimal</li>
-    <li>Blabber</li>
-    <li>Fandangocast</li>
-  </ul>
+  {% for project in site.projects reversed %}
+    <article class="project">
+      <h3 class="project__title">
+        {{ project.title }}
+      </h3>
+      <div class="project__media">
+        {% if project.image %}
+          <img class="project__image" src="{{site.baseurl}}/assets/{{project.image}}" width="300px">
+        {% endif %}
+        {% if project.vimeo_video_id %}
+          <iframe src="http://player.vimeo.com/video/{{project.vimeo_video_id}}?title=0&amp;byline=0&amp;portrait=0" width="300" height="169" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        {% endif %}
+      </div>
+      <ul class="project__facts">
+        <li class="project__fact" >{{ project.type }}</li>
+        <li>{{ project.date | date: "%b %Y" }}</li>
+      </ul>
+      <p class="project__content">
+        {{ project.content | markdownify }}
+      </p>
+      {% if project.external_url %}
+        <a href="{{project.external_url}}" class="project__external-button">View project</a>
+      {% endif %}
+    </article>
+  {% endfor %}
 </section>
 
 <section class="content__section" id="posts">
@@ -31,7 +49,7 @@ title: Niels Hoffmann
       <span class="content__date">{{ post.date | date_to_string }}</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
-    {% endfor %}
+  {% endfor %}
   </ul>
 </section>
 
@@ -40,7 +58,7 @@ title: Niels Hoffmann
   <p>Don't hesitate to send me an email at <a href="mailto:niels@zentralmaschine.net"  title="Write an email!">niels@zentralmaschine.net</a>.</p>
   <p>Take a loot at <a href="{{site.baseurl}}/assets/2020_Niels_Hoffmann_CV.pdf">my CV</a>. You can also find me on
   <a href="https://twitter.com/zentralmaschine" title="Follow on twitter">Twitter</a>,
-  <a href="https://github.com/nhoffmann">Github</a> or
-  <a href="https://www.linkedin.com/in/nielsphoffmann">LinkedIn</a>.
+  <a href="https://github.com/nhoffmann" title="Github">Github</a> or
+  <a href="https://www.linkedin.com/in/nielsphoffmann" title="LinkedIn">LinkedIn</a>.
   </p>
 </section>
