@@ -1,11 +1,16 @@
 .project {
   clear: both;
 
-  margin-bottom: 30px;
+  margin: 60px 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .project__title {
   margin: 0;
+  font-size: 20px;
 }
 
 .project__media {
