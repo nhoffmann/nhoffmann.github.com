@@ -3,6 +3,7 @@ body {
   font-family: $font-family;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  font-weight: 200;
 }
 
 a {
@@ -25,5 +26,5 @@ h1, h2, h3, h4, h5, h6 {
 .site {
   margin: 40px auto 80px;
 
-  max-width: 650px;
+  max-width: 700px;
 }
