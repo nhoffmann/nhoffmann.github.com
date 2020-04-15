@@ -35,3 +35,16 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 480px) {
+  .project__title {
+    margin-bottom: 15px;
+  }
+
+  .project__media {
+    float: none;
+
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}

@@ -7,6 +7,8 @@
 }
 
 .header__title {
+  color: $text-color;
+
   display: inline;
   margin: 0 25px 0 0;
   line-height: 1.3;
@@ -31,5 +33,15 @@
 
   &:hover {
     color: $text-color;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: block;
+  }
+
+  .header__title {
+    margin-bottom: 20px;
   }
 }
